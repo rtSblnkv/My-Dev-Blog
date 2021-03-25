@@ -1,10 +1,15 @@
 import React from 'react';
-import SearchBarComponent from './components/SearchBar/SearchBar';
+import {Header} from './components/Header/Header';
+import {Footer} from './components/Footer/Footer';
+
 
 
 function App() {
   return ( 
-  <SearchBarComponent/>
+    <div className ="app">
+        <Header/>
+        <Footer/>
+    </div>
   );
 }
 

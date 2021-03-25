@@ -1,8 +1,8 @@
-import React,{Fragment} from 'react'
+import React from 'react'
 import searchIcon from './SearchIcon.png'
 import './SearchBar.css'
 
-const SearchBarComponent = () => {
+export const SearchBarComponent = () => {
      return(
          <div className="searchbar">
               <button className="search-btn">
@@ -14,5 +14,4 @@ const SearchBarComponent = () => {
      );
 }
 
-export default SearchBarComponent;
 

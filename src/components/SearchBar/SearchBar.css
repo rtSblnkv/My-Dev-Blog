@@ -40,8 +40,14 @@
 
 .search-btn:hover {
     margin-left:8px;
-    border:10;
-    background:#E3ECE2;
+    border-radius:20px;
+    background:#2e6d8a;
+}
+
+.search-btn:focus {
+    margin-left:8px;
+    border-radius:20px;
+    background:#204C60;
 }
 
 

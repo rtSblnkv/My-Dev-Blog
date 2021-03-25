@@ -1,0 +1,14 @@
+.Button{
+    width:80px;
+    height:50px;
+    border-radius: 28px;
+}
+
+.Button :hover{
+    border:2px;
+    filter:drop-shadow(16px 16px 10px black)
+}
+
+.Button :focus{
+    filter:brightness(50%)
+}
