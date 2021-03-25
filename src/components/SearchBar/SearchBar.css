@@ -1,0 +1,48 @@
+.searchbar{
+   height: 30px;
+   margin-top:8px;
+   margin-right:16px;
+   text-align: center;
+}
+
+.input-fld{
+    border-radius:36px;
+    padding-left: 50px;
+    width: 342px;
+    height: 40px;
+    padding-left:20px;
+    border:0;
+    font: bold large sans-serif;
+    background:#E3ECE2;
+    color: black;
+    outline: none;
+}
+
+.input-fld:hover{
+    border-radius:36px;
+    border:0;
+    background:#9ac096;
+    color: black;
+}
+
+.input-fld:focus{
+    border:0;
+    color: black;
+}
+
+
+.search-btn {
+    margin-left:8px;
+    border:0;
+    background:transparent;
+    margin-top: 10px;
+}
+
+.search-btn:hover {
+    margin-left:8px;
+    border:10;
+    background:#E3ECE2;
+}
+
+
+
