@@ -1,0 +1,10 @@
+.app-footer{
+    display:flex;
+    text-align:center;
+    border:5px solid black;
+}
+
+.creators-lnk{
+    display:flex;
+    padding:5px;
+}
