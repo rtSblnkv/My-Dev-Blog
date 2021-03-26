@@ -1,0 +1,12 @@
+.app-header{
+    display:flex;
+    justify-content:space-between;
+    align-items: center;
+    background-color: #3DA4BD;
+}
+.auth-reg-btns{
+    justify-content:space-between;
+    display:flex;
+    margin-right: 10px;
+
+}

@@ -10,8 +10,10 @@ export const Header = () =>{
            <h1>MY DEV BLOG</h1>
         </div>
         <SearchBarComponent/>
-        <Button link="/" text="Регистрация"color ="#CCAAFB"/>
-        <Button link="/" text="Войти"color ="#BFEFFA"/>  
+        <div className="auth-reg-btns">
+          <Button link="/" text="Регистрация"color ="#CCAAFB"/>
+          <Button link="/" text="Войти"color ="#BFEFFA"/> 
+        </div> 
         </header>
     );
 }
