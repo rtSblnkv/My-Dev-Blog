@@ -12,6 +12,12 @@
     border-radius: 30px;
 }
 
+.card:hover {
+    -webkit-transform: scale(1.03);
+    -ms-transform: scale(1.03);
+    transform: scale(1.03);
+    background: #38c5ec ;
+  }
 .card-content{
     padding-top: 25px;
     padding-left: 45px;
@@ -51,7 +57,7 @@
 }
 
 
-.card-autor{
+.card-author{
     font-style: normal;
     font-weight: normal;
     font-size: 24px;
