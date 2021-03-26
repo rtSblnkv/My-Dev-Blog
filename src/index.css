@@ -1,12 +1,10 @@
 body {
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-    color:#DEF0CF;
+  font-family: 'McLaren', cursive;
+    color:#C5FBA4;
     font-weight:bolder;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color:#204C60 ;
+  background-color:#456979 ;
 }
 
 code {

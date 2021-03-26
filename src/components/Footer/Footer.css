@@ -1,8 +1,8 @@
 .app-footer{
     display:flex;
-    background-color:#3DA4BD;
     padding-left: 5px;
     justify-content: space-between;
+    border: 2px solid black;
 }
 
 .creators-lnk{
