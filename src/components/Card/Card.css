@@ -1,6 +1,6 @@
 .card-app{
-    width: max-content;
-    height: max-content;
+    width:100px;
+    height:100px;
     background: #56A8BC;
     border-radius: 30px;
     margin:5px;
@@ -8,9 +8,9 @@
 }
 
 .card-link{
-   width:max-content;
-   height:max-content;
-   font-size:small;
+    width: max-content;
+    height: max-content;
+   font-size:large;
    text-decoration: none;
 }
 
@@ -21,4 +21,17 @@
 
 .card-txt{
     color: #C5FBA4;
+    text-align: center;
+}
+
+.card-img{
+    width:80%;
+    height: 50%;
+    border: 1px solid black;
+    position: center;
+}
+.card-img img{
+    width: 90%;
+    height: 90%;
+  
 }

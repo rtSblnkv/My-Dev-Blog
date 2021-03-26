@@ -15,7 +15,9 @@ export const Card = (props) => {
                   <img src = {props.img}/>
                </div>
                <div className="card-txt">
-                   {props.title}
+                    <h5>
+                    {props.title} 
+                    </h5>
                </div>
             </a>
         </div>
