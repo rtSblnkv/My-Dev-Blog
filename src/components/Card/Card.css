@@ -1,0 +1,24 @@
+.card-app{
+    width: max-content;
+    height: max-content;
+    background: #56A8BC;
+    border-radius: 30px;
+    margin:5px;
+    display:block;
+}
+
+.card-link{
+   width:max-content;
+   height:max-content;
+   font-size:small;
+   text-decoration: none;
+}
+
+.card-app:hover{
+    filter:brightness(50%);
+    border-radius: 50px;
+}
+
+.card-txt{
+    color: #C5FBA4;
+}
