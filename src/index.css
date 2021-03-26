@@ -3,9 +3,7 @@ body {
     font-family:'McLaren', cursive;
     color:#C5FBA4;
     font-weight:bolder;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    background-color:#456979 ;
+    margin: 0;  
 }
 
 
