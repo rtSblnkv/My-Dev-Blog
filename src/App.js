@@ -10,6 +10,8 @@ function App() {
     <div className ="app">
         <Header/>
         <Cardblog/>
+        <Cardblog/>
+        <Cardblog/>
         <Footer/>
     </div>
   );
