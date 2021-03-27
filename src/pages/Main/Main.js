@@ -11,6 +11,7 @@ import Html from '../../images/Html.png'
 import Sql from '../../images/SQl.png'
 import Css from '../../images/Css.png'
 
+
 export const Main = () =>{
     return (
         <div className ="app-main">
