@@ -1,37 +1,43 @@
 .card-app{
-    width:100px;
-    height:100px;
+    width:220px;
+    height:220px;
+    margin-left:auto;
+    margin-right:auto;
     background: #56A8BC;
     border-radius: 30px;
-    margin:5px;
-    display:block;
+    text-align:center;
 }
 
 .card-link{
-    width: max-content;
-    height: max-content;
-   font-size:large;
-   text-decoration: none;
+    width: 100%;
+    height: 100%;
+    font-size:large;
+    text-decoration: none;
 }
 
 .card-app:hover{
     filter:brightness(50%);
-    border-radius: 50px;
+    border-radius: 60px;
 }
 
 .card-txt{
     color: #C5FBA4;
     text-align: center;
+    margin-top:-1px;
 }
 
 .card-img{
-    width:80%;
-    height: 50%;
-    border: 1px solid black;
-    position: center;
+    width:75%;
+    height: 75%;
+    margin-left:auto;
+    margin-right:auto;
+    margin-top:15px;
+    border: 2px solid black;
+    border-radius: 26px;
+    padding-top:8px;
+    filter:drop-shadow(5px -1px 5px black);
 }
 .card-img img{
     width: 90%;
     height: 90%;
-  
 }
