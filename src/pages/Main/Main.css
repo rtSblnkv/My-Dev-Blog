@@ -1,0 +1,16 @@
+.app-cards{
+    margin-top:40px;
+    justify-content: center;
+
+    display:grid;
+    grid-template-columns: repeat(3,250px);
+    grid-template-rows: repeat(3,250px);
+    
+}
+
+.app-main{
+    text-align:center;
+    margin-left: auto;
+    margin-right:auto;
+
+}

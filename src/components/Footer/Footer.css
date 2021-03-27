@@ -1,9 +1,14 @@
 .app-footer{
     display:flex;
+    position:fixed;
+    bottom:0;
+    width:100%;
     padding-left: 5px;
-    padding-right: 5px;
+    padding-right: 10px;
+    margin-top:70px;
     justify-content: space-between;
     border: 2px solid black;
+    box-sizing: border-box ;
 }
 
 .creators-lnk{
