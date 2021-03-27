@@ -1,9 +1,12 @@
 .app-header{
     display:flex;
+    position:fixed;
     width:100%;
     justify-content:space-between;
     align-items: center;
     background-color: #1B4559;
+    margin-bottom:1px;
+    z-index:3;
 }
 .auth-reg-btns{
     justify-content:space-between;
