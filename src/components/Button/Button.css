@@ -1,21 +1,21 @@
 .Button{
-    background-color:#5CCBEE;
+    background-color: #5CCBEE;
     padding:5px;
     margin-left:10px;
     width:max-content;
     height:max-content;
-    border: 2px solid rgb(27, 166, 221); 
     border-radius:8px ;
+    box-sizing: border-box;
 }
 
 .Button a{
     text-decoration: none;
-    color:#DEF0CF;
+    color:#C4FAAE;
 }
 
-.Button :hover{
-    border:0px;
-    filter:drop-shadow(0px 1px 1px rgb(24, 241, 151)) brightness(120%);
+.Button:hover{
+    filter: brightness(110%);
+    filter:drop-shadow(-5px 5px 5px black);
 }
 
 .Button :focus{
