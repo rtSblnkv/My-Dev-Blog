@@ -1,13 +1,12 @@
 .app-footer{
     display:flex;
     padding-left: 5px;
+    padding-right: 5px;
     justify-content: space-between;
     border: 2px solid black;
-    margin-top:0px;
 }
 
 .creators-lnk{
     display:flex;
-
     align-items: center;
 }
