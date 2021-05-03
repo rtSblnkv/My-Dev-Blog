@@ -1,11 +1,9 @@
 import React from 'react';
 import './Button.css';
 
-export const Button =({link,text}) =>{
-    //const Style=styled.div
-    //`color:{color.string =>color}`;
+export const Button =({link,text,color}) =>{
     return(
-        <div className="Button">
+        <div className="Button" style ={{backgroundcolor:'red'}}>
             <a href = {link}>{text}</a>
         </div>
     );

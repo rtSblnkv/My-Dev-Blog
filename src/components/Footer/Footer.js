@@ -10,12 +10,12 @@ export const Footer = () =>{
                 <Button 
                 link="https://vk.com/rt_sblnkv" 
                 text="Артем Сабельников"
-   
+                color ="#56A8BC"
                 />
                 <Button 
                 link="https://vk.com/aaaptyppp" 
                 text="Артур Фаттахов"
-      
+                color ="#BFEFFA"
                 />
                 <Button 
                 link="https://vk.com/b4sk4kov" 
