@@ -1,5 +1,8 @@
 .app-footer{
     display:flex;
+    position:fixed;
+    bottom:0;
+    width:100%;
     padding-left: 5px;
     padding-right: 5px;
     justify-content: space-between;
