@@ -6,7 +6,7 @@ import "./BlogTextHeader.css";
  *
  * @param {String} text - заголовок
  */
-export const BlogTextHeaderComponent = ({text}) => {
+export const BlogTextHeader = ({text}) => {
     return(
         <div className="blogTextHeader">
             {text}

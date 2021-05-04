@@ -6,7 +6,7 @@ import "./BlogTextBody.css";
  *
  * @param {String} text - текст блога
  */
-export const BlogTextBodyComponent = ({ text }) => {
+export const BlogTextBody = ({ text }) => {
     return ( 
         <div className = "blogTextBody">
             { text } 
