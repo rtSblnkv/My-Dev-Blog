@@ -5,5 +5,5 @@ const LikeSchema = new Schema({
     post:{type:Schema.ObjectId,ref:'Post'}
 });
 
-const Like = model("Like",LikeSchema);
+const Like = model("like",LikeSchema);
 export {Like};

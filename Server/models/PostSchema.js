@@ -9,5 +9,5 @@ const PostSchema = new Schema({
     author:{type:Schema.ObjectId,ref:'User',required:true},
 });
 
-const Post = model("Post",PostSchema);
+const Post = model("post",PostSchema);
 export {Post};
