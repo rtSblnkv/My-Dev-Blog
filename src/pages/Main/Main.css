@@ -1,16 +1,31 @@
-.app-cards{
-    margin-top:40px;
-    justify-content: center;
 
+.main-intro{
+    display:flex; 
+}
+
+.main-intro-img{
+    position:relative;
+}
+
+.main-intro-img img{
+    position:fixed;
+    filter:brightness(80%);
+    width:50%;
+    z-index:0;
+}
+
+.main-intro-txt{
+    margin-top:100px;
+    font-size: x-large;
+    z-index:2;
+    color:rgb(199, 228, 39);
+}
+.app-cards{
+    margin-top:15px;
+    position:relative;
+    justify-content: center;
     display:grid;
     grid-template-columns: repeat(3,250px);
     grid-template-rows: repeat(3,250px);
-    
-}
-
-.app-main{
-    text-align:center;
-    margin-left: auto;
-    margin-right:auto;
-
+    z-index:2;
 }
