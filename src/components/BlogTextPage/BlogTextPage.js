@@ -1,17 +1,23 @@
 import React from "react";
-import { BlogTextBody } from "./components/BlogTextBody/BlogTextBody";
-import { BlogTextHeader } from "./components/BlogTextHeader/BlogTextHeader";
-import { BlogAuthor } from "./components/BlogAuthor/BlogAuthor";
+import "./BlogTextPage.css";
+import { BlogTextBody } from "../BlogTextBody/BlogTextBody";
+import { BlogTextHeader } from "../BlogTextHeader/BlogTextHeader";
+import { BlogAuthor } from "../BlogAuthor/BlogAuthor";
+import { BlogTextLikeButton } from "../BlotTextLikeButton/BlogTextLikeButton"
 
-export const TestArt = () => {
-  return (
-    <div>
-      <BlogAuthor author="Jupaha69" date="30 Февраля 2021" />
-      <BlogTextHeader text={fishTextHeader} />
-      <BlogTextBody text={fishText} />
-    </div>
-  );
-};
+/**
+ * Компонент страницы блога
+ */
+ export const BlogTextPage = () => {
+    return(
+        <div className="blogTextPage">
+            <BlogAuthor author="Jupaha69" date="5 мая 2021" />
+            <BlogTextLikeButton liked = {true} />
+            <BlogTextHeader text={fishTextHeader} />
+            <BlogTextBody text={fishText} />
+        </div>
+    );
+}
 
 /* TO DELETE */
 var fishTextHeader = "Ваш шедевр готов!";

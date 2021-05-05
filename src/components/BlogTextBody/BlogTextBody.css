@@ -1,9 +1,9 @@
 .blogTextBody {
-  position: absolute;
   width: 897px;
-  height: 2009.05px;
-  left: 293px;
-  top: 291.75px;
+  height: max-content;
+  margin-top: 30px;
+  margin-left: auto;
+  margin-right: auto;
   font-family: McLaren;
   font-style: normal;
   font-weight: normal;

@@ -1,9 +1,8 @@
 .author {
-  position: absolute;
-  width: 268px;
+  width: max-content;
   height: 46.43px;
-  left: 340px;
-  top: 134.08px;
+  margin-left: 5px;
+  margin-top: 20px;
 
   font-family: McLaren;
   font-style: normal;
@@ -13,14 +12,15 @@
   text-align: center;
 
   color: #000000;
+
+  float: left;
 }
 
 .date {
-  position: absolute;
-  width: 117px;
-  height: 19.35px;
-  left: 550px;
-  top: 134.08px;
+  width: max-content;
+  height: 20px;
+  margin-left: 20px;
+  margin-top: 20px;
 
   font-family: McLaren;
   font-style: normal;
@@ -30,13 +30,15 @@
 
   text-align: center;
 
-  color: #777777;
+  /*color: #777777;*/
+
+  float: left;
 }
 
-.icon {
-  position: absolute;
+.authorIcon {
   width: 40px;
   height: 40.63px;
-  left: 395px;
-  top: 116.67px;
+  margin-left: 111px;
+  
+  float: left;
 }

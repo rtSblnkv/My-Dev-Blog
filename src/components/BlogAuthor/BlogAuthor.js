@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import userIcon from "./userIcon.png";
+import "./BlogAuthor.css"
 
 /**
  * Компонент основного текста блога
@@ -10,7 +11,7 @@ import userIcon from "./userIcon.png";
 export const BlogAuthor = ({ author }, { date }) => {
   return (
     <div>
-      <div classname="icon">
+      <div className="authorIcon">
         <img src={userIcon} alt="UserIcon" />
       </div>
       <div className="author">{author}</div>
