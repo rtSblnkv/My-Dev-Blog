@@ -1,12 +1,12 @@
-import React from 'react'
-import './BlogTextBody.css';
+import React from "react";
+import "./BlogTextBody.css";
 
 /**
  * Компонент основного текста блога
- * 
+ *
  * @param {String} text - текст блога
  */
-export const BlogTextBodyComponent = ({ text }) => {
+export const BlogTextBody = ({ text }) => {
     return ( 
         <div className = "blogTextBody">
             { text } 

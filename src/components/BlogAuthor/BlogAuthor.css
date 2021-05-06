@@ -1,0 +1,45 @@
+.author {
+  width: max-content;
+  height: 46.43px;
+  margin-left: 5px;
+  margin-top: 30px;
+
+  font-family: McLaren;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: center;
+
+  color: #000000;
+
+  float: left;
+}
+
+.date {
+  width: max-content;
+  height: 20px;
+  margin-left: 20px;
+  margin-top: 20px;
+
+  font-family: McLaren;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 20px;
+
+  text-align: center;
+
+  /*color: #777777;*/
+
+  float: left;
+}
+
+.authorIcon {
+  width: 40px;
+  height: 40.63px;
+  margin-left: 111px;
+  margin-top: 10px;
+  
+  float: left;
+}

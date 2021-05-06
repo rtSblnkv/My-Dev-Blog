@@ -4,11 +4,9 @@
 }
 
 .main-intro-img{
-    position:relative;
 }
 
 .main-intro-img img{
-    position:fixed;
     filter:brightness(80%);
     width:50%;
     z-index:0;

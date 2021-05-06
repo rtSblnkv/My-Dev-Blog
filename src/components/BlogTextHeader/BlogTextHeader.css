@@ -1,0 +1,16 @@
+.blogTextHeader {
+  width: 904px;
+  height: 44.5px;
+
+  margin-left: auto;
+  margin-top: 77px;
+
+  font-family: McLaren;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 32px;
+  line-height: 46px;
+  text-align: center;
+
+  color: #000000;
+}
