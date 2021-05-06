@@ -1,9 +1,9 @@
 import React from "react";
 import "./BlogTextPage.css";
-import { BlogTextBody } from "../BlogTextBody/BlogTextBody";
-import { BlogTextHeader } from "../BlogTextHeader/BlogTextHeader";
-import { BlogAuthor } from "../BlogAuthor/BlogAuthor";
-import { BlogTextLikeButton } from "../BlotTextLikeButton/BlogTextLikeButton"
+import { BlogTextBody } from "../../components/BlogTextBody/BlogTextBody";
+import { BlogTextHeader } from "../../components/BlogTextHeader/BlogTextHeader";
+import { BlogAuthor } from "../../components/BlogAuthor/BlogAuthor";
+import { BlogTextLikeButton } from "../../components/BlotTextLikeButton/BlogTextLikeButton"
 
 /**
  * Компонент страницы блога
