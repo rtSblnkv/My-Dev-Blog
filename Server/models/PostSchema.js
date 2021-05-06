@@ -1,9 +1,9 @@
 import {Schema} from "mongoose";
 
 const PostSchema = new Schema({
-    title:{type:String,requred:true},
+    title:{type:String,required:true},
     description:String, 
-    text:{type:String,requred:true},
+    text:{type:String,required:true},
     date:{type:Date,default:Date.now},
     hashtags:{type:[String],match:'\#[a-zA-Z]'},
     section:{type:Schema.ObjectId,ref:'Section',required:true},
