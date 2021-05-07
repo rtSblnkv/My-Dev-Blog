@@ -1,23 +1,18 @@
 import React from "react";
 import "./Card.css";
+import { Link } from "react-router-dom";
 
-function importAll(r){
-    return r.keys().map(r);
-}
-
-const images=importAll(require.context('./',false,/\.(png)$/));
-
-export const Card = (props) => {
+export const Card = ({img, title,path}) => {
     return(
         <div className="card-app">
-             <a className="card-link" href={props.path}>
+             <Link to={path} className="card-link">
                <div className = "card-img">
-                  <img src = {props.img}/>
+                  <img src = {img}/>
                </div>
                <div className="card-txt">
-                    {props.title} 
+                    {title} 
                </div>
-            </a> 
+               </Link>
         </div>
     );
 }
