@@ -31,9 +31,9 @@ export const Main = () => {
         <div className ="app-main">  
             <Intro text={Text} image={mdbImage} />        
             <div className="app-cards">  
-                <Card img={Android} title="Android" path="/"/>
-                <Card img={Flutter} title="Flutter" path="/"/>
-                <Card img={Python} title="Python" path="/"/>
+                <Card img={Android} title="Android" path="/Android"/>
+                <Card img={Flutter} title="Flutter" path="/Flutter"/>
+                <Card img={Python} title="Python" path="/Python"/>
                 <Card img={JS} title="JavaScript" path="/"/>
                 <Card img={Html} title="HTML" path="/"/>
                 <Card img={Css} title="CSS" path="/"/>
