@@ -10,7 +10,6 @@ export const createPostsResponse = (posts) =>{
             like_count:getPostLikes(post._id)
         }
     });
-
 };
 
 export const createPostResponse = (post) =>{

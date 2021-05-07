@@ -19,7 +19,7 @@ postRouter.get('/:section_name',async(req,res)=>{
             res.status(200).json(createPostsResponse(posts));
         }
     });  
-});
+})
 
 postRouter.get('/:section/:id',(req,res)=>{
     Post.findOne({_id:req.parama.id})
