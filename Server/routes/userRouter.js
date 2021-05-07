@@ -3,7 +3,7 @@ import {User} from "../models/UserSchema"
 
 const userRouter = Router();
 
-userRouter.get('/user/get',(req,res)=>{
+userRouter.get('/',(req,res)=>{
     const {filter,skip,limit,sort,projection,population} = aqp(req.query);
     User.find(filter)
     .skip(skip)
@@ -24,15 +24,15 @@ userRouter.get('/user/get',(req,res)=>{
 
 });
 
-userRouter.post('/user/post',(req,res)=>{
+userRouter.post('/',(req,res)=>{
     
 })
 
-userRouter.put('/user/update',(req,res)=>{
+userRouter.put('/',(req,res)=>{
     
 })
 
-userRouter.delete('/user/:id',(req,res)=>{
+userRouter.delete('/:id',(req,res)=>{
     
 })
 

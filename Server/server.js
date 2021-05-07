@@ -7,10 +7,9 @@ import {postRouter} from "../routes/postRouter";
 
 
 const app = express()
-app.use("/api",postRouter);
-app.use("/api",userRouter);
-app.use("/api",sectionRouter);
-app.use("/api",likeRouter);
+app.use("/",postRouter);
+app.use("/user",userRouter);
+app.use("/",sectionRouter);
 
 
 const port = process.env.PORT || 5000
