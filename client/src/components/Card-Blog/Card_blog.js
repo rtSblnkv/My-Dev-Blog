@@ -1,5 +1,5 @@
 import React from 'react';
-import '../Card-Blog/Card-blog.css';
+import './Card-blog.css';
 import like from './images/like.png'
 import mark from './images/mark.png'
 
