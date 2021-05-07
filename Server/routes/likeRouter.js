@@ -1,5 +1,5 @@
 import {Router} from "express";
-import {Like} from "../models/LikeSchema";
+import {Like} from "../models/LikeSchema.js";
 
 const likeRouter = Router();
 
@@ -15,3 +15,5 @@ likeRouter.post('/:section/:id', (req,res)=>{
             else res.status(200).json(`User ${req.body.user} liked ${req.params.section} successfully`);
         });
     });
+
+    export {likeRouter};

@@ -1,4 +1,5 @@
-import {Schema} from "mongoose";
+import pkg from 'mongoose';
+const {Schema,model} = pkg;
 
 const LikeSchema = new Schema({
     user:{type:Schema.ObjectId,ref:'User'},

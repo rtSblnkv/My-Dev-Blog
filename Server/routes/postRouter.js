@@ -1,7 +1,7 @@
 import {Router} from "express";
-import {Post} from "../models/PostSchema";
-import {createPostsResponse,createPostResponse} from "../functions/ServerResponses";
-import {getSectionId} from "../functions/GetId"
+import {Post} from "../models/PostSchema.js";
+import {createPostsResponse,createPostResponse} from "../functions/ServerResponses.js";
+import {getSectionId} from "../functions/GetId.js"
 
 const postRouter = Router();
 

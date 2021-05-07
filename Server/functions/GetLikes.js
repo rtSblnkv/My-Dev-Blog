@@ -1,4 +1,4 @@
-import {Like} from "../models/LikeSchema";
+import {Like} from "../models/LikeSchema.js";
 
 export async function getPostLikes(id){
    Like.countDocuments({user:id}).exec((err,count)=>{

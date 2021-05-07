@@ -1,5 +1,5 @@
 import {Router} from "express";
-import {Section} from "../models/SectionSchema";
+import {Section} from "../models/SectionSchema.js";
 
 const sectionRouter = Router();
 

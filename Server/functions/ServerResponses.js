@@ -1,4 +1,4 @@
-import {getPostLikes} from "../functions/GetLikes"
+import {getPostLikes} from "../functions/GetLikes.js"
 
 export const createPostsResponse = (posts) =>{
     return posts.map((post)=>{

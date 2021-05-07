@@ -1,4 +1,5 @@
-import {Schema} from "mongoose";
+import pkg from 'mongoose';
+const {Schema,model} = pkg;
 
 const UserSchema = new Schema({
     login:{type:String,required:true},
