@@ -8,6 +8,7 @@ import {postRouter} from "../Server/routes/postRouter.js";
 
 
 const app = express()
+
 app.use("/",postRouter);
 app.use("/user",userRouter);
 app.use("/",sectionRouter);
