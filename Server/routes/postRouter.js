@@ -1,36 +1,49 @@
 import {Router} from "express";
-import {Post} from "../models/PostSchema"
+import {Post} from "../models/PostSchema.js";
+import {createPostsResponse,createPostResponse} from "../functions/ServerResponses.js";
+import {getSectionId} from "../functions/GetId.js"
 
 const postRouter = Router();
 
-postRouter.get('/post/get',(req,res)=>{
-    const {filter,skip,limit,sort,projection,population} = aqp(req.query);
-    Post.find(filter)
-    .skip(skip)
-    .limit(limit)
-    .sort(sort)
-    .projection(projection)
-    .populate(population)
+postRouter.get('/:section_name',async(req,res)=>{
+    let sectionId = await getSectionId(req.params.section_name);
+    Post.find({'section': sectionId})
+    .populate('author')
+    .sort({date:-1})
     .exec((err,posts) => {
         if(err){
             console.log(err.code);
             res.status(400).json(err.Code);
         }
         else {
-            res.status(200).send(posts.flatMap(x => x));
+            res.status(200).json(createPostsResponse(posts));
         }
     });  
 })
 
-postRouter.post('/post/post',(req,res)=>{
+postRouter.get('/:section/:id',(req,res)=>{
+    Post.findOne({_id:req.parama.id})
+    .populate('author')
+    .exec((err,post) => {
+        if(err){
+            console.log(err.code);
+            res.status(400).json(err.Code);
+        }
+        else {
+            res.status(200).json(createPostResponse(post));
+        }
+    });  
+});
+
+postRouter.post('/',(req,res)=>{
     
 })
 
-postRouter.put('/post/update',(req,res)=>{
+postRouter.put('/',(req,res)=>{
     
 })
 
-postRouter.delete('/post/delete',(req,res)=>{
+postRouter.delete('/',(req,res)=>{
     
 })
 

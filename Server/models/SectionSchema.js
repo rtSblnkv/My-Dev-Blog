@@ -1,7 +1,8 @@
-import {Schema} from "mongoose";
+import pkg from 'mongoose';
+const {Schema,model} = pkg;
 
 const SectionSchema = new Schema({
-    section:{type:String,required:true}
+    name:{type:String,required:true}
 });
 const Section = model("section",SectionSchema);
 export{Section};

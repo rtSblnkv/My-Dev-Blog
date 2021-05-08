@@ -1,10 +1,9 @@
 import {Router} from "express";
-import {Section} from "../models/SectionSchema";
+import {Section} from "../models/SectionSchema.js";
 
 const sectionRouter = Router();
 
-sectionRouter.get('/section/get',(req,res)=>{
-    const {filter,skip,limit,sort,projection,population} = aqp(req.query);
+sectionRouter.get('/',(req,res)=>{
     Section.find(filter)
     .skip(skip)
     .limit(limit)
@@ -20,13 +19,13 @@ sectionRouter.get('/section/get',(req,res)=>{
             res.status(200).send(sections.flatMap(x => x));
         }
     }); 
-})
+});
 
-sectionRouter.post('/section/post',(req,res)=>{
+sectionRouter.post('/',(req,res)=>{
     
 })
 
-sectionRouter.put('/section/update',(req,res)=>{
+sectionRouter.put('/',(req,res)=>{
     
 })
 
