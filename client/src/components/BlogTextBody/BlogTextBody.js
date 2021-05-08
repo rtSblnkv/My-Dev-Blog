@@ -1,5 +1,5 @@
 import React from "react";
-import "./BlogTextBody.css";
+import "../BlogTextBody.css";
 
 /**
  * Компонент основного текста блога
