@@ -1,0 +1,30 @@
+.blog-title{
+    display: flex;
+    width: 1164px;
+    height: 238px;
+    margin-top: 45px;
+    margin-bottom: 45px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.blog-section{
+
+    font-family: McLaren;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 55px;
+    line-height: 79px;
+
+    color: #C5FBA4;
+}
+
+.blog-text{
+    font-family: McLaren;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 40px;
+    line-height: 57px;
+    color: rgba(197, 251, 164, 0.6);
+    margin-top: 5px;
+}
