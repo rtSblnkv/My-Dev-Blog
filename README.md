@@ -3,32 +3,43 @@ This is a new blog about programming called My Dev Blog.
 By Artur Fattakhov,Artem Sabelnikov and Mikhail Baskakov
 ***
 ### 1.Клонирование репозитория
----
-git clone
-***
+```bash
+   git clone https://github.com/algorithm-ssau/My-Dev-Blog.git
+```
 ### 2.Подготовка клиентской части 
----
-* cd ..\client 
-* npm install
-Запуск клиента:npm run start
----
+```bash
+ cd ..\client 
+ npm install
+```
+#### Запуск клиента: 
+```bash
+npm run start
+```
 ### 3.Подготовка серверной части 
----
-* cd ..\Server 
-* npm install
-* npm install nodemon -D
-Запуск сервера: nodemon server
----
-### 4.Запуск python api
----
+```bash
+ cd ..\Server 
+ npm install
+ npm install nodemon -D
+```
+#### Запуск сервера:
+```bash
+ nodemon server
+```
+
+### 4.python api
+
 #### Настройка виртуального окружения:
-* py -3 -m venv .venv
-* .venv\scripts\activate
-Устанавливаем fastapi:
-* py -3 -m pip install fastapi
-Устанавливаем uvicorn:
-* py -3 -m pip install uvicorn
-Запуск python API:
-* py -3 -m uvicorn main:app
+```bash
+ py -3 -m venv .venv
+ .venv\scripts\activate
+```
+#### Установка fastapi и uvicorn
+```bash
+ py -3 -m pip install fastapi uvicron
+```
+#### Запуск python API:
+```bash
+ py -3 -m uvicorn main:app
+```
 
 
