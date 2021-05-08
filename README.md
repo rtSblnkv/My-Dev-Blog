@@ -5,43 +5,43 @@ By Artur Fattakhov,Artem Sabelnikov and Mikhail Baskakov
 ***
 ## Installation
 ### 1.Clone repository
-```bash
-  git clone https://github.com/algorithm-ssau/My-Dev-Blog.git
-```
+ ```bash
+   git clone https://github.com/algorithm-ssau/My-Dev-Blog.git
+ ```
 ### 2.Client part
-```bash
- cd ..\client 
- npm install
-```
+ ```bash
+  cd ..\client 
+  npm install
+ ```
 #### Client launch: 
-```bash
-npm run start
-```
+ ```bash
+  npm run start
+ ```
 ### 3.Server part
-```bash
- cd ..\Server 
- npm install
- npm install nodemon -D
-```
+ ```bash
+  cd ..\Server 
+  npm install
+  npm install nodemon -D
+ ```
 #### Server launch:
 ```bash
  nodemon server
 ```
 
-### 4.Python api
+### 4. Python api
 
 #### Setting up a venv:
-```bash
- py -3 -m venv .venv
- .venv\scripts\activate
-```
+ ```bash
+  py -3 -m venv .venv
+  .venv\scripts\activate
+ ```
 #### Install fastapi and uvicorn
-```bash
- py -3 -m pip install fastapi uvicron
-```
+ ```bash
+  py -3 -m pip install fastapi uvicorn
+ ```
 #### Start python API:
-```bash
- py -3 -m uvicorn main:app
-```
+ ```bash
+  py -3 -m uvicorn main:app
+ ```
 
 
