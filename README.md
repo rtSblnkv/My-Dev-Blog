@@ -4,7 +4,7 @@ By Artur Fattakhov,Artem Sabelnikov and Mikhail Baskakov
 ***
 ### 1.Клонирование репозитория
 ```bash
-   git clone https://github.com/algorithm-ssau/My-Dev-Blog.git
+  git clone https://github.com/algorithm-ssau/My-Dev-Blog.git
 ```
 ### 2.Подготовка клиентской части 
 ```bash
@@ -26,7 +26,7 @@ npm run start
  nodemon server
 ```
 
-### 4.python api
+### 4.Python api
 
 #### Настройка виртуального окружения:
 ```bash
