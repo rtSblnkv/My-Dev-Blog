@@ -1,21 +1,31 @@
 # My-Dev-Blog
-This is a new blog about programming called My Dev Blog. By Artur Fattakhov,Artem Sabelnikov and Mikhail Baskakov
-1.Клонирование репозитория git clone
-2.Подготовка клиентской части 
+This is a new blog about programming called My Dev Blog.
+***
+By Artur Fattakhov,Artem Sabelnikov and Mikhail Baskakov
+***
+h3 1.Клонирование репозитория
+---
+git clone
+***
+h3 2.Подготовка клиентской части 
+---
 *cd ..\client 
 *npm install
 *Запуск клиента:npm run start
-
-3.Подготовка серверной части 
+---
+h3 3.Подготовка серверной части 
+---
 *cd ..\Server 
 *npm install
 *npm install nodemon -D
 Запуск сервера: nodemon server
-
-4.Запуск python api
+---
+h3 4.Запуск python api
+---
 Настройка виртуального окружения:
+---
 *py -3 -m venv .venv
-.venv\scripts\activate
+*.venv\scripts\activate
 Устанавливаем fastapi:
 *py -3 -m pip install fastapi
 Устанавливаем uvicorn:
