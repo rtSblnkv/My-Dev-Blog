@@ -14,23 +14,23 @@ async def insert_user(user:User = Body(...)):
     user = jsonable_encoder(user)
     new_user = await db["users"].insert_one(user)
     #TODO update id to my format
-    created_user = await db["My-Dev-Blog"].find_one({"_id":new_user.inserted_id})
+    created_user = await db["MyDevBlog"].find_one({"_id":new_user.inserted_id})
     return JSONResponse(status_code =status.HTTP_201_CREATED,content=created_user)
 
 @app.post("/section_create",response_description="Add new Section",response_model=Section)
 async def insert_section(section:Section = Body(...)):
     section = jsonable_encoder(section)
-    new_section = await db["My-Dev-Blog"].insert_one(section)
+    new_section = await db["MyDevBlog"].insert_one(section)
     #TODO update id to my format
-    created_section = await db["My-Dev-Blog"].find_one({"_id":new_section.inserted_id})
+    created_section = await db["MyDevBlog"].find_one({"_id":new_section.inserted_id})
     return JSONResponse(status_code=status.HTTP_201_CREATED,content=created_section)
 
 @app.post("/post_create",response_description="Add new Post",response_model=Post)
 async def insert_post(post:Post = Body(...)):
     post = jsonable_encoder(post)
-    new_post = await db["My-Dev-Blog"].insert_one(post)
+    new_post = await db["MyDevBlog"].insert_one(post)
     #TODO update id to my format
-    created_post = await db["My-Dev-Blog"].find_one({"_id":new_post.inserted_id})
+    created_post = await db["MyDevBlog"].find_one({"_id":new_post.inserted_id})
     return JSONResponse(status_code=status.HTTP_201_CREATED,content=created_post)
 
 @app.get('/developers')
