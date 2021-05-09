@@ -29,7 +29,9 @@ By Artur Fattakhov,Artem Sabelnikov and Mikhail Baskakov
 ```
 
 ### 4. Python api
-
+```bash
+cd ...\python_api
+```
 #### Setting up a venv:
  ```bash
   py -3 -m venv .venv
