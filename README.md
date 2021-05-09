@@ -28,8 +28,8 @@ By Artur Fattakhov,Artem Sabelnikov and Mikhail Baskakov
  nodemon server
 ```
 
-### 4. Python api
-Python api is used for sending POST-requests for database populating.
+### 4. Python API
+Python API is used for database populating by sending POST-requests.
 ```bash
  cd ...\python_api
 ```
@@ -46,7 +46,7 @@ Python api is used for sending POST-requests for database populating.
  ```bash
   uvicorn main:app
  ```
- Change your url to .../docs and start OpenApi.
+ Change your url to .../docs and start OpenAPI.
  Create request and execute.
 
 
