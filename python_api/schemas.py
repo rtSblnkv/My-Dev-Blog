@@ -1,5 +1,5 @@
 from pydantic import BaseModel,Field,EmailStr
-from python_api.pyobjectId import PyObjectId
+from pyobjectId import PyObjectId
 from bson import ObjectId
 from datetime import date
 
@@ -28,12 +28,12 @@ class Post(BaseModel):
         }
 
 class User(BaseModel):
-    id:PyObjectId = Field(default_factory=PyObjectId,alias="_id" )
-    login:Emailstr = Field(...)
+    id:PyObjectId = Field(default_factory=PyObjectId,alias='_id')
+    login:str = Field(...)
     password:str = Field(...)
     nickname:str = Field(...)
     class Config:
-        allow_population_by_field_name = True
+        #allow_population_by_field_name = True
         arbitrary_types_allowed = True
         json_encoders = {ObjectId: str}
         schema_extra = {
@@ -47,9 +47,9 @@ class User(BaseModel):
 
 class Section(BaseModel):
     id:PyObjectId = Field(default_factory=PyObjectId,alias="_id" )
-    section_name:str
+    section_name:str = Field(...)
     class Config:
-        allow_population_by_field_name = True
+        #allow_population_by_field_name = True
         arbitrary_types_allowed = True
         json_encoders = {ObjectId: str}
         schema_extra = {
