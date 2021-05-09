@@ -37,13 +37,13 @@ By Artur Fattakhov,Artem Sabelnikov and Mikhail Baskakov
   py -3 -m venv .venv
   .venv\scripts\activate
  ```
-#### Install fastapi and uvicorn
+#### Install fastapi,uvicorn,pydantic,bson,motor
  ```bash
-  py -3 -m pip install fastapi uvicorn
+  pip install uvicorn fastapi motor pydantic bson
  ```
 #### Start python API:
  ```bash
-  py -3 -m uvicorn main:app
+  uvicorn main:app
  ```
 
 
