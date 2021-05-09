@@ -29,6 +29,7 @@ By Artur Fattakhov,Artem Sabelnikov and Mikhail Baskakov
 ```
 
 ### 4. Python api
+Python api is used for sending POST-requests for database populating.
 ```bash
  cd ...\python_api
 ```
@@ -45,5 +46,7 @@ By Artur Fattakhov,Artem Sabelnikov and Mikhail Baskakov
  ```bash
   uvicorn main:app
  ```
+ Change your url to .../docs and start OpenApi.
+ Create request and execute.
 
 
