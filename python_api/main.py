@@ -8,7 +8,6 @@ from python_api.schemas import Post,User,Section
 app = FastAPI()
 client = motor.motor_asyncio.AsyncIOMotorClient(os.environ["MONGO_URL"])
 db = client.college
-_
 @app.post("/user_create",response_description="Add new User",response_model=User)
 async def insert_user(user:User = Body(...)):
     user = jsonable_encoder(user)
