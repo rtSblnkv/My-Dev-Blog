@@ -9,10 +9,10 @@ class Post(BaseModel):
     description:str = Field(...)
     text:str = Field(...)
     post_date:date = Field(...)
-    section:PyObjectId = Field(default_factory=PyObjectId)
-    author:PyObjectId = Field(default_factory=PyObjectId)
+    section:str = Field(...)
+    author:str = Field(...)
     class Config:
-        allow_population_by_field_name = True
+        #allow_population_by_field_name = True
         arbitrary_types_allowed = True
         json_encoders = {ObjectId: str}
         schema_extra = {
