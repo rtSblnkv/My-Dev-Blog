@@ -3,23 +3,18 @@ import {Section} from "../models/SectionSchema.js";
 
 const sectionRouter = Router();
 
-sectionRouter.get('/',(req,res)=>{
-    Section.find(filter)
-    .skip(skip)
-    .limit(limit)
-    .sort(sort)
-    .projection(projection)
-    .populate(population)
+sectionRouter.get('/',async(req,res)=>{
+    Section.find()
     .exec((err,sections) => {
         if(err){
             console.log(err.code);
             res.status(400).json(err.Code);
         }
         else {
-            res.status(200).send(sections.flatMap(x => x));
+            res.status(200).json(sections.map(x => x));
         }
-    }); 
-});
+    });  
+})
 
 sectionRouter.post('/',(req,res)=>{
     
