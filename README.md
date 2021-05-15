@@ -1,14 +1,17 @@
-# My-Dev-Blog
+# My-Dev-Blog 💻
 ## About the project
 This is a new blog about programming called My Dev Blog.
-By Artur Fattakhov,Artem Sabelnikov and Mikhail Baskakov
+By. 🧑‍🎓
+🖥️ [Artur Fattakhov!](https://github.com/rtSblnkv)
+🖥️ [Artem Sabelnikov!](https://github.com/mix4il)
+🖥️ [Mikhail Baskakov!](https://github.com/thundernorain)
 ***
-## Installation
-### 1.Clone repository
+## Installation 💿
+### 1.Clone repository 📂
  ```bash
    git clone https://github.com/algorithm-ssau/My-Dev-Blog.git
  ```
-### 2.Client part
+### 2.Client part 📤
  ```bash
   cd ..\client 
   npm install
@@ -17,7 +20,7 @@ By Artur Fattakhov,Artem Sabelnikov and Mikhail Baskakov
  ```bash
   npm run start
  ```
-### 3.Server part
+### 3.Server part 🗳️
  ```bash
   cd ..\Server 
   npm install
@@ -28,7 +31,7 @@ By Artur Fattakhov,Artem Sabelnikov and Mikhail Baskakov
  nodemon server
 ```
 
-### 4. Python API
+### 4. Python API 🐍
 Python API is used for database populating by sending POST-requests.
 ```bash
  cd ...\python_api
