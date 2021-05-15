@@ -1,7 +1,7 @@
 # My-Dev-Blog 💻
 ## About the project 📖
 This is a new blog about programming called My Dev Blog.\
-By. 🧑‍🎓
+By 🧑‍🎓 :
 
  🖥️ [Artur Fattakhov!](https://github.com/rtSblnkv)
 
