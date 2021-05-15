@@ -5,7 +5,7 @@ import { CardBlogTitle } from "../../components/Card-Blog-Title/Card-Blog-Title"
 import { CardBlogList } from "../../components/Card-blog-list/Card-blog-list";
 import { Link } from "react-router-dom";
 
-const posts = [
+let posts = [
     {
         title :"Java",
         content:"mvimrekvrmvlkemkvrev re vkqwrv wer v w rev",
@@ -40,7 +40,23 @@ export const BlogItemsPage = () => {
             text = "Новости, интересные программные решения, обсуждения, связанные с JS и всем, что его касается"
             img = {JS}
             />
-            <CardBlogList blogList = {posts}/>
+            <div id="posts">
+                <CardBlogList blogList = {posts}/>
+            </div>
         </div>
     );
 }
+
+const sectionName = "JS"
+class PostApi{
+    static fetch(){
+        return fetch("/" + sectionName, {method: 'get'}).then(res => res.json())
+    }
+}
+
+document.addEventListener('DOMContentLoaded', () =>{
+    PostApi.fetch().then(backendPosts => {
+        posts = backendPosts.concat()
+        console.log(posts)
+    })
+})
