@@ -1,13 +1,13 @@
 # My-Dev-Blog 💻
 ## About the project 📖
-This is a new blog about programming called My Dev Blog.\
-By. 🧑‍🎓\
+This is a new blog about programming called My Dev Blog.
+By. 🧑‍🎓
 
- 🖥️ [Artur Fattakhov!](https://github.com/rtSblnkv)\
+ 🖥️ [Artur Fattakhov!](https://github.com/rtSblnkv)
 
- 🖥️ [Artem Sabelnikov!](https://github.com/mix4il)\
+ 🖥️ [Artem Sabelnikov!](https://github.com/mix4il)
 
- 🖥️ [Mikhail Baskakov!](https://github.com/thundernorain)\
+ 🖥️ [Mikhail Baskakov!](https://github.com/thundernorain)
 
 ***
 ## Installation 💿
