@@ -3,7 +3,7 @@ import JS from '../../images/JS.png'
 import { Cardblog } from "../../components/Card-Blog/Card_blog";
 import { CardBlogTitle } from "../../components/Card-Blog-Title/Card-Blog-Title";
 import { CardBlogList } from "../../components/Card-blog-list/Card-blog-list";
-import { Link } from "react-router-dom";
+import { Link, Router  } from "react-router-dom";
 
 let posts = [
     {
@@ -32,11 +32,12 @@ let posts = [
     }
 ]
 
-export const BlogItemsPage = () => {
+export const BlogItemsPage = ({Section}) => {
+
     return(
         <div>
             <CardBlogTitle 
-            section = "JavaScript"
+            section = {Section}
             text = "Новости, интересные программные решения, обсуждения, связанные с JS и всем, что его касается"
             img = {JS}
             />

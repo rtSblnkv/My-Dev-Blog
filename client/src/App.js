@@ -14,7 +14,10 @@ function App() {
     <div className ="app">
         <Header/>
           <Route path="/" component={Main} exact/>
-          <Route path="/JavaScript" component={BlogItemsPage}/>
+          <Route path="/:spec" render ={({match})=>{
+            console.log(match.params.spec)
+            return <BlogItemsPage Section ={match.params.spec} />
+          }}/>
         <Footer/>
     </div>
     </Router>
