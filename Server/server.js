@@ -16,7 +16,8 @@ app.use("/",likeRouter);
 
 
 const port = process.env.PORT || 5000
-const mongoUri = "mongodb+srv://MIha:12345678qwe@cluster0.usmef.mongodb.net/myFirstDatabase?retryWrites=true&w=majority"
+const mongoUri = "mongodb+srv://MIha:12345678qwe@cluster0.usmef.mongodb.net/blog?retryWrites=true&w=majority"
+
 const start = async () => {
     try{
         await connect(mongoUri,{
