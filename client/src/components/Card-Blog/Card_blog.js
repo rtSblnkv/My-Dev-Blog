@@ -2,10 +2,14 @@ import React from 'react';
 import './Card-blog.css';
 import like from './images/like.png'
 import mark from './images/mark.png'
+import {Link, useRouteMatch} from 'react-router-dom'
 
 
-export const Cardblog = ({title,content,author,likes,marks}) => {
+export const Cardblog = ({id, title,content,author,likes,marks}) => {
+    let match = useRouteMatch();
     return(
+        <>
+        <Link to = {`${match.path}/${id}`} className="card-link">
         <div className="card">
             <div className="card-content">
                 <div className="card-head">{title}</div>
@@ -21,5 +25,7 @@ export const Cardblog = ({title,content,author,likes,marks}) => {
                 </div>
             </div>
         </div>
+        </Link>
+        </>
     );
 }

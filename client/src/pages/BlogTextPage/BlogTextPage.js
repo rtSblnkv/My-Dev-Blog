@@ -8,10 +8,10 @@ import { BlogTextLikeButton } from "../../components/BlotTextLikeButton/BlogText
 /**
  * Компонент страницы блога
  */
- export const BlogTextPage = () => {
+ export const BlogTextPage = ({id}) => {
     return(
         <div className="blogTextPage">
-            <BlogAuthor author="Jupaha69" date="5 мая 2021" />
+            <BlogAuthor author={id} date="5 мая 2021" />
             <BlogTextLikeButton liked = {true} />
             <BlogTextHeader text={fishTextHeader} />
             <BlogTextBody text={fishText} />
