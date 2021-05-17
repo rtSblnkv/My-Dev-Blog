@@ -1,6 +1,5 @@
 import React from "react";
 import { Cardblog } from "../Card-Blog/Card_blog";
-
 export const CardBlogList = ({blogList})=> {
     const posts = blogList.map((item)=>{
         const {id, ...itemProps} = item;
@@ -10,7 +9,6 @@ export const CardBlogList = ({blogList})=> {
             </div>
         )
     })
-    
     return (
         <div>
             {posts}

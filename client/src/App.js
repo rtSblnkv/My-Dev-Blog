@@ -4,7 +4,7 @@ import {Footer} from './components/Footer/Footer';
 
 import {Main} from './pages/Main/Main'
 import {BlogItemsPage} from './pages/BlogItemsPage/BlogItemsPage'
-import {Cardblog} from './components/Card-Blog/Card_blog'
+import {BlogTextPage} from './pages/BlogTextPage/BlogTextPage'
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 
 
@@ -14,9 +14,12 @@ function App() {
     <div className ="app">
         <Header/>
           <Route path="/" component={Main} exact/>
-          <Route path="/:spec" render ={({match})=>{
-            console.log(match)
-            return <BlogItemsPage Section ={match.params.spec} />
+          <Route path="/:section" render ={({match})=>{
+            return <BlogItemsPage Section ={match.params.section} />
+          }}
+          exact/>
+          <Route path="/:section/:id" render ={({match})=>{
+            return <BlogTextPage id={match.params.id}/>
           }}
           exact/>
         <Footer/>

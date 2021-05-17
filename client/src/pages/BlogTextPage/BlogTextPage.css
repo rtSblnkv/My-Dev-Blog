@@ -1,10 +1,9 @@
 .blogTextPage{
-    position: absolute;
     width: 988px;
     height: max-content;
     min-height: 100%;
-    left: 229px;
-    top: 107px;
+    margin-left: auto;
+    margin-right: auto;
 
     background: #BFEFFA;
 }
