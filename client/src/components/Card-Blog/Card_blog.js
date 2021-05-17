@@ -5,11 +5,11 @@ import mark from './images/mark.png'
 import {Link, useRouteMatch} from 'react-router-dom'
 
 
-export const Cardblog = ({title,content,author,likes,marks}) => {
+export const Cardblog = ({id, title,content,author,likes,marks}) => {
     let match = useRouteMatch();
     return(
         <>
-        <Link to = {`${match.path}/${1}`} className="card-link">
+        <Link to = {`${match.path}/${id}`} className="card-link">
         <div className="card">
             <div className="card-content">
                 <div className="card-head">{title}</div>
