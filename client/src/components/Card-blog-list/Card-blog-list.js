@@ -12,7 +12,7 @@ export const CardBlogList = ({blogList})=> {
     })
     
     return (
-        <div >
+        <div>
             {posts}
         </div>
     )

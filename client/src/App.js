@@ -15,9 +15,10 @@ function App() {
         <Header/>
           <Route path="/" component={Main} exact/>
           <Route path="/:spec" render ={({match})=>{
-            console.log(match.params.spec)
+            console.log(match)
             return <BlogItemsPage Section ={match.params.spec} />
-          }}/>
+          }}
+          exact/>
         <Footer/>
     </div>
     </Router>

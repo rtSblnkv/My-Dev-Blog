@@ -65,3 +65,7 @@
     color: #000000;
     margin-right: 44px;
 }
+
+.card-link{
+    text-decoration: none;
+}

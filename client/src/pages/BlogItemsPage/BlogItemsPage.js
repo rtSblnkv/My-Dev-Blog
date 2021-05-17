@@ -1,6 +1,5 @@
 import React from "react";
 import JS from '../../images/JS.png'
-import { Cardblog } from "../../components/Card-Blog/Card_blog";
 import { CardBlogTitle } from "../../components/Card-Blog-Title/Card-Blog-Title";
 import { CardBlogList } from "../../components/Card-blog-list/Card-blog-list";
 import { Link, Router  } from "react-router-dom";
@@ -33,7 +32,6 @@ let posts = [
 ]
 
 export const BlogItemsPage = ({Section}) => {
-
     return(
         <div>
             <CardBlogTitle 
