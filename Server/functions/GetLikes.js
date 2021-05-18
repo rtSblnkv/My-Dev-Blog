@@ -1,7 +1,7 @@
 import {Like} from "../models/LikeSchema.js";
 
 export async function getPostLikes(id){
-   Like.countDocuments({user:id}).exec((err,count)=>{
+   Like.countDocuments({post:id}).exec((err,count)=>{
        if(err)
        {
            console.log(err.code);

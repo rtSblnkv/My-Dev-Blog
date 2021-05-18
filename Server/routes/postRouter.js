@@ -5,11 +5,10 @@ import {getSectionId} from "../functions/GetId.js"
 
 const postRouter = Router();
 
-postRouter.get('/:section_name',async(req,res)=>{
-    //let sectionId = await getSectionId(req.params.section_name);
+postRouter.get('/:section_name',(req,res)=>{
     Post.find({'section':req.params.section_name})
     .populate('author')
-    //.sort({date:-1})
+    .sort({date:-1})
     .exec((err,posts) => {
         if(err){
             console.log(err.code);
@@ -22,7 +21,7 @@ postRouter.get('/:section_name',async(req,res)=>{
 })
 
 postRouter.get('/:section/:id',(req,res)=>{
-    Post.findOne({_id:req.params.id})
+    Post.findById(req.params.id)
     .populate('author')
     .exec((err,post) => {
         if(err){
