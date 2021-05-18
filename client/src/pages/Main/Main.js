@@ -34,11 +34,11 @@ export const Main = () => {
                 <Card img={Android} title="Android" path="/Android"/>
                 <Card img={Flutter} title="Flutter" path="/Flutter"/>
                 <Card img={Python} title="Python" path="/Python"/>
-                <Card img={JS} title="JavaScript" path="/JavaScript"/>
+                <Card img={JS} title="JavaScript" path="/JS"/>
                 <Card img={Html} title="HTML" path="/HTMl"/>
                 <Card img={Css} title="CSS" path="/CSS"/>
                 <Card img={Java} title="Java" path="/Java"/>
-                <Card img={Csharp} title="C#" path="/C#"/>
+                <Card img={Csharp} title="C#" path="/CSharp"/>
                 <Card img={Sql} title="SQL" path="/SQL"/>
             </div>               
         </div>
