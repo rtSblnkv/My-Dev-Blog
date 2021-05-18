@@ -3,7 +3,7 @@ import {Header} from './components/Header/Header';
 import {Footer} from './components/Footer/Footer';
 
 import {Main} from './pages/Main/Main'
-import {BlogItemsPage} from './pages/BlogItemsPage/BlogItemsPage'
+import BlogItemsPage from './pages/BlogItemsPage/BlogItemsPage'
 import {BlogTextPage} from './pages/BlogTextPage/BlogTextPage'
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 

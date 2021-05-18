@@ -5,7 +5,7 @@ import mark from './images/mark.png'
 import {Link, useRouteMatch} from 'react-router-dom'
 
 
-export const Cardblog = ({id, title,content,author,likes,marks}) => {
+export const Cardblog = ({id, title,description,author,likes,marks}) => {
     let match = useRouteMatch();
     return(
         <>
@@ -13,7 +13,7 @@ export const Cardblog = ({id, title,content,author,likes,marks}) => {
         <div className="card">
             <div className="card-content">
                 <div className="card-head">{title}</div>
-                <div className="card-text ">{content}</div>
+                <div className="card-text ">{description}</div>
                 <div className="card-info"> 
                     <div className="card-icons">
                         <img src={mark} alt='mark' ></img>
