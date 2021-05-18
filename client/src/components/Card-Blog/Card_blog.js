@@ -7,9 +7,10 @@ import {Link, useRouteMatch} from 'react-router-dom'
 
 export const Cardblog = ({id, title,description,author,likes,marks}) => {
     let match = useRouteMatch();
+    
     return(
         <>
-        <Link to = {`${match.path}/${id}`} className="card-link">
+        <Link to = {`${match.url}/${id}`} className="card-link">
         <div className="card">
             <div className="card-content">
                 <div className="card-head">{title}</div>

@@ -4,7 +4,7 @@ import {Footer} from './components/Footer/Footer';
 
 import {Main} from './pages/Main/Main'
 import BlogItemsPage from './pages/BlogItemsPage/BlogItemsPage'
-import {BlogTextPage} from './pages/BlogTextPage/BlogTextPage'
+import BlogTextPage from './pages/BlogTextPage/BlogTextPage'
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 
 
@@ -19,7 +19,7 @@ function App() {
           }}
           exact/>
           <Route path="/:section/:id" render ={({match})=>{
-            return <BlogTextPage id={match.params.id}/>
+            return <BlogTextPage Id={match.params.id}/>
           }}
           exact/>
         <Footer/>
