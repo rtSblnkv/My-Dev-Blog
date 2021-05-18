@@ -2,7 +2,7 @@ import pkg from 'mongoose';
 const {Schema,model} = pkg;
 
 const SectionSchema = new Schema({
-    name:{type:String,required:true}
+    section_name:{type:String,required:true}
 });
-const Section = model("section",SectionSchema);
+const Section = model("sections",SectionSchema);
 export{Section};
