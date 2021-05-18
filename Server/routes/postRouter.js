@@ -21,7 +21,7 @@ postRouter.get('/:section_name',(req,res)=>{
 })
 
 postRouter.get('/:section/:id',(req,res)=>{
-    Post.findOne({_id:req.params.id})
+    Post.findById(req.params.id)
     .populate('author')
     .exec((err,post) => {
         if(err){
