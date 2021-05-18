@@ -7,7 +7,7 @@ const PostSchema = new Schema({
     text:{type:String,required:true},
     date:{type:Date,default:Date.now},
     hashtags:{type:[String],match:'\#[a-zA-Z]'},
-    section:{type:Schema.ObjectId,ref:'sections',required:true},
+    section:{type:String,required:true},
     author:{type:Schema.ObjectId,ref:'users',required:true},
 });
 

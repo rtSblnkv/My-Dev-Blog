@@ -7,6 +7,7 @@ export const createPostsResponse = (posts) =>{
             description:post.description,
             date:post.date,
             author:post.author.nickname,
+            id:post.id,
             like_count:getPostLikes(post._id)
         }
     });
