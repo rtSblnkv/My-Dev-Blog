@@ -7,5 +7,5 @@ const UserSchema = new Schema({
     nickname:String  
 });
 
-const User = model("user",UserSchema);
+const User = model("users",UserSchema);
 export {User};

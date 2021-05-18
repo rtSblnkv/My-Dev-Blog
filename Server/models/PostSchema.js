@@ -7,9 +7,9 @@ const PostSchema = new Schema({
     text:{type:String,required:true},
     date:{type:Date,default:Date.now},
     hashtags:{type:[String],match:'\#[a-zA-Z]'},
-    section:{type:Schema.ObjectId,ref:'Section',required:true},
-    author:{type:Schema.ObjectId,ref:'User',required:true},
+    section:{type:Schema.ObjectId,ref:'sections',required:true},
+    author:{type:Schema.ObjectId,ref:'users',required:true},
 });
 
-const Post = model("post",PostSchema);
+const Post = model("posts",PostSchema);
 export {Post};
