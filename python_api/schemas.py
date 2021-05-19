@@ -10,20 +10,18 @@ class Post(BaseModel):
     text:str = Field(...)
     post_date:date = Field(...)
     section:str = Field(...)
-    author:str = Field(...)
+    author:PyObjectId = Field(default_factory=PyObjectId)
     class Config:
-        #allow_population_by_field_name = True
         arbitrary_types_allowed = True
         json_encoders = {ObjectId: str}
         schema_extra = {
             "example": {
-                "id":"1",
                 "title": "JS intro",
                 "description": "JS intro in ES6 module for beginners",
                 "text": "mnogo texta",
                 "post_date": "2021-03-05",
                 "section":"JS",
-                "author":"1"
+                "author": "60a16289ea5b82b20ec7b7da"
             }
         }
 
@@ -33,12 +31,10 @@ class User(BaseModel):
     password:str = Field(...)
     nickname:str = Field(...)
     class Config:
-        #allow_population_by_field_name = True
         arbitrary_types_allowed = True
         json_encoders = {ObjectId: str}
         schema_extra = {
             "example": {
-                "id": "1",
                 "login": "jdoe@example.com",
                 "password": "ddkvjdaf",
                 "nickname": "aaartuuuup",
@@ -49,12 +45,10 @@ class Section(BaseModel):
     id:PyObjectId = Field(default_factory=PyObjectId,alias="_id" )
     section_name:str = Field(...)
     class Config:
-        #allow_population_by_field_name = True
         arbitrary_types_allowed = True
         json_encoders = {ObjectId: str}
         schema_extra = {
             "example": {
-                "id":"JS",
                 "section_name": "JS"            
             }
         }

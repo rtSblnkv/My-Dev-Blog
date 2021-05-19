@@ -7,10 +7,10 @@ from fastapi.responses import JSONResponse
 from schemas import Post,User,Section
 
 app = FastAPI()
-client = AsyncIOMotorClient("mongodb+srv://RtSblnkv:12345rr@cluster0.usmef.mongodb.net/blog?retryWrites=true&w=majority")
+client = AsyncIOMotorClient("mongodb+srv://rTSblnkv:12hh45hh@cluster0.usmef.mongodb.net/blog?retryWrites=true&w=majority")
 db = client.blog
 
-@app.post("/user_create",response_description="Add new User")
+@app.post("/user_create",response_description="Add new User",response_model=User)
 async def insert_user(user:User):
     user = jsonable_encoder(user)
     new_user = await db["users"].insert_one(user)
@@ -18,7 +18,7 @@ async def insert_user(user:User):
     created_user = await db["users"].find_one({"_id":new_user.inserted_id})
     return JSONResponse(status_code =status.HTTP_201_CREATED,content=created_user)
 
-@app.post("/section_create",response_description="Add new Section")
+@app.post("/section_create",response_description="Add new Section",response_model=Section)
 async def insert_section(section:Section = Body(...)):
     section = jsonable_encoder(section)
     new_section = await db["sections"].insert_one(section)
@@ -26,7 +26,7 @@ async def insert_section(section:Section = Body(...)):
     created_section = await db["sections"].find_one({"_id":new_section.inserted_id})
     return JSONResponse(status_code=status.HTTP_201_CREATED,content=created_section)
 
-@app.post("/post_create",response_description="Add new Post")
+@app.post("/post_create",response_description="Add new Post",response_model=Post)
 async def insert_post(post:Post = Body(...)):
     post = jsonable_encoder(post)
     new_post = await db["posts"].insert_one(post)
