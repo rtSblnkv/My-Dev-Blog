@@ -1,65 +1,69 @@
 # My-Dev-Blog 💻
-## About the project 📖
-This is a new blog about programming called My Dev Blog.\
-By 🧑‍🎓 :
+## О проекте 📖
+Это новый сайт-болг о программировании под названием My-Dev-Blog.\
+Над проектом работали 🧑‍🎓 :
 
- 🖥️ [Artur Fattakhov](https://github.com/rtSblnkv)
+ 🖥️ [Артур Фаттахов](https://github.com/rtSblnkv)
 
- 🖥️ [Artem Sabelnikov](https://github.com/mix4il)
+ 🖥️ [Артём Сабельников](https://github.com/mix4il)
 
- 🖥️ [Mikhail Baskakov](https://github.com/thundernorain)
+ 🖥️ [Михаил Баскаков](https://github.com/thundernorain)
 
 ***
-### You need to install [Node.js](https://nodejs.org/en/download/) to run this app. 🛣️
+### Для запуска сайта вам нужно установить [Node.js](https://nodejs.org/en/download/). 🛣️
 
-## Installation 💿
-### 1.Clone repository 📂
+## Установка 💿
+### 1.Клонируйте репозиторий 📂
  ```bash
    git clone https://github.com/algorithm-ssau/My-Dev-Blog.git
  ```
-### 2.Client part 📤
+### 2.Клиентская часть 📤
  ```bash
   cd ..\client 
   npm install
  ```
-#### Client launch: 
+#### Запуск клиентской части: 
  ```bash
   npm run start
  ```
-### 3.Server part 🗳️
+### 3.Серверная часть 🗳️
  ```bash
   cd ..\Server 
   npm install
   npm install nodemon -D
  ```
-#### Server launch:
+#### Запуск сервера:
 ```bash
- nodemon server
+ npm run dev
 ```
 
 ### 4. Python API 🐍
-Python API is used for database populating by sending POST-requests.\
+API, созданное с помощью Python,Fastapi используется для наполнения базы данных сайта посредством POST-запросов.\
 
-You need to install [Python Interpreter](https://www.python.org/downloads/) to run API.\
+Для работы с API вам нужно установить [Python](https://www.python.org/downloads/).\
 
-Then
+Затем
 ```bash
  cd ...\python_api
 ```
-#### Setting up a venv:
+#### Настройка виртуального окружения:
  ```bash
   py -3 -m venv .venv
   .venv\scripts\activate
  ```
-#### Install fastapi,uvicorn,pydantic,bson,motor
+#### Установите fastapi,uvicorn,pydantic,bson,motor
  ```bash
   pip install uvicorn fastapi motor pydantic bson
  ```
-#### Start python API:
+#### Запустите API:
  ```bash
   uvicorn main:app
  ```
- Change your url to .../docs and start OpenAPI.
- Create request and execute.
+ Измените URL на  
+ ```
+ http://127.0.0.1:8000/docs
+ ```
+ Откройте интерфейс OpenAPI.\
+ Выберите необходимый запрос,введите данные и нажмите кнопку "EXECUTE".
 
 
