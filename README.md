@@ -12,7 +12,7 @@
 ***
 ### Для запуска сайта вам нужно установить [Node.js](https://nodejs.org/en/download/). 🛣️
 
-## Установка 💿
+## Запуск проекта 💿
 ### 1.Клонируйте репозиторий 📂
  ```bash
    git clone https://github.com/algorithm-ssau/My-Dev-Blog.git
