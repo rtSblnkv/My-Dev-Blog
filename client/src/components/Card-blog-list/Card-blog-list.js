@@ -3,6 +3,7 @@ import { Cardblog } from "../Card-Blog/Card_blog";
 export const CardBlogList = ({blogList})=> {
     const posts = blogList.map((item)=>{
         const {id} = item;
+        console.log(id)
         return(
             <div key = {id}>
                 <Cardblog {...item}/>
