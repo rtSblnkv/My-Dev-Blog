@@ -14,7 +14,7 @@ export default class BlogItemsPage extends Component {
     }
 
     componentDidMount(){
-         fetch("http://localhost:5000/" + this.section, {method: 'get'}).then(res => res.json()).then(backendPosts => {
+         fetch("/" + this.section, {method: 'get'}).then(res => res.json()).then(backendPosts => {
             this.setState({
                 posts: backendPosts
             })

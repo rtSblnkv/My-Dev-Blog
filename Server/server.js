@@ -15,7 +15,7 @@ app.use("/",sectionRouter);
 app.use("/",likeRouter);
 
 
-const port = process.env.PORT || 5000
+const port = process.env.PORT || 8080
 const mongoUri = "mongodb+srv://rTSblnkv:12hh45hh@cluster0.usmef.mongodb.net/blog?retryWrites=true&w=majority"
 const start = async () => {
     try{

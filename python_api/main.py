@@ -15,7 +15,6 @@ db = client.blog
 async def insert_user(user:User):
     user = jsonable_encoder(user)
     new_user = await db["users"].insert_one(user)
-    #TODO update id to my formatpip
     created_user = await db["users"].find_one({"_id":new_user.inserted_id})
     return JSONResponse(status_code =status.HTTP_201_CREATED,content=created_user)
 
@@ -23,7 +22,6 @@ async def insert_user(user:User):
 async def insert_section(section:Section = Body(...)):
     section = jsonable_encoder(section)
     new_section = await db["sections"].insert_one(section)
-    #TODO update id to my format
     created_section = await db["sections"].find_one({"_id":new_section.inserted_id})
     return JSONResponse(status_code=status.HTTP_201_CREATED,content=created_section)
 
@@ -31,7 +29,6 @@ async def insert_section(section:Section = Body(...)):
 async def insert_post(post:Post = Body(...)):
     post = jsonable_encoder(post)
     new_post = await db["posts"].insert_one(post)
-    #TODO update id to my format
     created_post = await db["posts"].find_one({"_id":new_post.inserted_id})
     return JSONResponse(status_code=status.HTTP_201_CREATED,content=created_post)
 
