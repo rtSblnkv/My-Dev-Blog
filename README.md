@@ -10,6 +10,8 @@ By 🧑‍🎓 :
  🖥️ [Mikhail Baskakov](https://github.com/thundernorain)
 
 ***
+### You need to install [Node.js](https://nodejs.org/en/download/) to run this app. 🛣️
+
 ## Installation 💿
 ### 1.Clone repository 📂
  ```bash
@@ -36,7 +38,11 @@ By 🧑‍🎓 :
 ```
 
 ### 4. Python API 🐍
-Python API is used for database populating by sending POST-requests.
+Python API is used for database populating by sending POST-requests.\
+
+You need to install [Python Interpreter](https://www.python.org/downloads/) to run API.\
+
+Then
 ```bash
  cd ...\python_api
 ```
