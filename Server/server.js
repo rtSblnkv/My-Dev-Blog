@@ -1,6 +1,7 @@
 import express from 'express';
+import path from 'path';
 import pkg from 'mongoose';
-const {connect} = pkg;
+const {connect,static} = pkg;
 import {likeRouter} from "../Server/routes/likeRouter.js";
 import {userRouter} from "../Server/routes/userRouter.js";
 import {sectionRouter} from "../Server/routes/sectionRouter.js";
@@ -14,8 +15,18 @@ app.use("/user",userRouter);
 app.use("/",sectionRouter);
 app.use("/",likeRouter);
 
+//Production static assets
+if(process.env.NODE_ENV==='production'){
+    //Set static folder
+    app.use(static('client/build'));
+    app.get('*',(req,res)=>{
+        res.sendFile();path.resolve(__dirname,'client','build','index.html');
+    });
+}
 
-const port = process.env.PORT || 8080
+
+const port = process.env.PORT || 5000
+
 const mongoUri = "mongodb+srv://rTSblnkv:12hh45hh@cluster0.usmef.mongodb.net/blog?retryWrites=true&w=majority"
 const start = async () => {
     try{

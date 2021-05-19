@@ -6,7 +6,12 @@
   "type": "module",
   "scripts": {
     "start": "node server.js",
-    "dev": "nodemon server.js"
+    "server": "nodemon server.js",
+    "client":"npm start --prefix client",
+    "client-build":"npm run build --prefix client",
+    "client-install":"npm install --prefix client",
+    "dev":"concurrently \"npm run server\" \"npm run client\"",
+    "heroku-postBuild":"NPM_CONFIG_PRODUCTION=false npm run client-install && npm run client-build"
   },
   "keywords": [],
   "author": "",
