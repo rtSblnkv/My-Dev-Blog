@@ -1,4 +1,5 @@
 import React, {Component} from "react";
+import dotenv from 'dotenv';
 import "./BlogTextPage.css";
 import { BlogTextBody } from "../../components/BlogTextBody/BlogTextBody";
 import { BlogTextHeader } from "../../components/BlogTextHeader/BlogTextHeader";
@@ -12,16 +13,15 @@ export default class BlogTextPage extends Component{
         this.state = {
             posts:{}
         }
-/*         fetch(`http://localhost:5000/${this.section}/${this.id}`, {method: 'get'}).then(res => res.json()).then(backendPosts => {
-            this.post = backendPosts
-        }) */
+        dotenv.config();
         console.log(this.section)
         console.log(this.id)
-        console.log(`https://my-dev-blog.herokuapp.com/:section/${this.id}`)
+        console.log(`${process.env.SERVER}/:section/${this.id}`)
     }
 
     componentDidMount(){
-        fetch(`https://my-dev-blog.herokuapp.com/:section/${this.id}`, {method: 'get'}).then(res => res.json()).then(backendPosts => {
+        const server = "https://my-dev-blog.herokuapp.com";
+        fetch(`${server}/:section/${this.id}`, {method: 'get'}).then(res => res.json()).then(backendPosts => {
             this.setState({
                 posts: backendPosts
             })
@@ -33,7 +33,7 @@ export default class BlogTextPage extends Component{
         console.log(post)
        return(
             <div className="blogTextPage">
-                <BlogAuthor author={post.author} date="5 мая 2021" />
+                <BlogAuthor author={post.author} date="26 мая 2021" />
                 <BlogTextLikeButton liked = {true} />
                 <BlogTextHeader text={post.title} />
                 <BlogTextBody text={post.text} />
@@ -41,32 +41,3 @@ export default class BlogTextPage extends Component{
        )
    }
 }
-/**
- * Компонент страницы блога
- */
-
-/*  export const BlogTextPage = ({id}) => {
-    return(
-        <div className="blogTextPage">
-            <BlogAuthor author={id} date="5 мая 2021" />
-            <BlogTextLikeButton liked = {true} />
-            <BlogTextHeader text={fishTextHeader} />
-            <BlogTextBody text={fishText} />
-        </div>
-    );
-}
-
-var fishTextHeader = "Ваш шедевр готов!";
-
-var fishText =
-  "Повседневная практика показывает, что новая модель организационной деятельности позволяет " +
-  "выполнять важные задания по разработке направлений прогрессивного развития. Идейные соображения высшего " +
-  "порядка, а также дальнейшее развитие различных форм деятельности играет важную роль в формировании " +
-  "направлений прогрессивного развития. Повседневная практика показывает, что сложившаяся структура " +
-  "организации требуют от нас анализа системы обучения кадров, соответствует насущным потребностям. " +
-  "Равным образом сложившаяся структура организации обеспечивает широкому кругу (специалистов) участие " +
-  "в формировании модели развития. Равным образом реализация намеченных плановых заданий обеспечивает " +
-  "широкому кругу (специалистов) участие в формировании новых предложений. С другой стороны постоянное " +
-  "информационно-пропагандистское обеспечение нашей деятельности влечет за собой процесс внедрения и " +
-  "модернизации новых предложений.";
- */
