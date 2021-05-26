@@ -21,7 +21,7 @@ postRouter.get('/:section_name',(req,res)=>{
 })
 
 postRouter.get('/:section/:id',(req,res)=>{
-    Post.findById(req.params.id)
+    Post.find({'_id': req.params.id})
     .populate('author')
     .exec((err,post) => {
         if(err){
@@ -46,4 +46,4 @@ postRouter.delete('/',(req,res)=>{
     
 })
 
-export {postRouter};
+export default postRouter;

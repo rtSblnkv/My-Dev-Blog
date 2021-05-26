@@ -1,10 +1,10 @@
 import express from 'express';
 import pkg from 'mongoose';
 const {connect} = pkg;
-import {likeRouter} from "../Server/routes/likeRouter.js";
-import {userRouter} from "../Server/routes/userRouter.js";
-import {sectionRouter} from "../Server/routes/sectionRouter.js";
-import {postRouter} from "../Server/routes/postRouter.js";
+import likeRouter from "./routes/likeRouter.js";
+import userRouter from "./routes/userRouter.js";
+import sectionRouter from "./routes/sectionRouter.js";
+import postRouter from "./routes/postRouter.js";
 
 
 const app = express()

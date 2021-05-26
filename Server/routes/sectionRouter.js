@@ -28,4 +28,4 @@ sectionRouter.delete('/post/delete',(req,res)=>{
     
 })
 
-export {sectionRouter};
+export default sectionRouter;

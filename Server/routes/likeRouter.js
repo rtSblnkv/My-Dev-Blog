@@ -16,4 +16,4 @@ likeRouter.post('/:section/:id', (req,res)=>{
         });
     });
 
-    export {likeRouter};
+    export default likeRouter;

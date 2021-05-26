@@ -17,11 +17,11 @@ export default class BlogTextPage extends Component{
         }) */
         console.log(this.section)
         console.log(this.id)
-        console.log(`http://localhost:5000/:section/${this.id}`)
+        console.log(`https://my-dev-blog.herokuapp.com/:section/${this.id}`)
     }
 
     componentDidMount(){
-        fetch(`http://localhost:5000/:section/${this.id}`, {method: 'get'}).then(res => res.json()).then(backendPosts => {
+        fetch(`https://my-dev-blog.herokuapp.com/:section/${this.id}`, {method: 'get'}).then(res => res.json()).then(backendPosts => {
             this.setState({
                 posts: backendPosts
             })

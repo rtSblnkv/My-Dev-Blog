@@ -4,13 +4,7 @@ import {User} from "../models/UserSchema.js"
 const userRouter = Router();
 
 userRouter.get('/',(req,res)=>{
-    const {filter,skip,limit,sort,projection,population} = aqp(req.query);
-    User.find(filter)
-    .skip(skip)
-    .limit(limit)
-    .sort(sort)
-    .projection(projection)
-    .populate(population)
+    User.find()
     .exec((err,users) => {
         if(err){
             console.log(err.code);
@@ -36,4 +30,4 @@ userRouter.delete('/:id',(req,res)=>{
     
 })
 
-export {userRouter};
+export default  userRouter;
