@@ -22,7 +22,7 @@ export const Cardblog = ({id, title,description,author,likes,marks}) => {
                         <img src={like} alt='like'></img>
                         {likes}
                     </div>
-                    <div className="card-author">{"Autor: " + author}</div>
+                    <div className="card-author">{"Author: " + author}</div>
                 </div>
             </div>
         </div>
