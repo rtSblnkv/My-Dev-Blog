@@ -4,7 +4,7 @@ import {Section} from "../models/SectionSchema.js";
 const sectionRouter = Router();
 
 sectionRouter.get('/',async(req,res)=>{
-    Section.find()
+    await Section.find()
     .exec((err,sections) => {
         if(err){
             console.log(err.code);
