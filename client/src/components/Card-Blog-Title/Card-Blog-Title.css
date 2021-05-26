@@ -28,3 +28,12 @@
     color: rgba(197, 251, 164, 0.6);
     margin-top: 5px;
 }
+.blog-image{
+    width:45%;
+    height: 100%;
+    filter:drop-shadow(5px -1px 5px black);
+}
+.blog-image img{
+    width: 90%;
+    height: 90%;
+}

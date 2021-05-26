@@ -1,14 +1,34 @@
 import React, {Component} from "react";
-import dotenv from 'dotenv';
-import JS from '../../images/JS.png'
+import android from '../../images/Android.png'
+import flutter from '../../images/Flutter.png'
+import csharp from '../../images/Csharp.png'
+import python from '../../images/Python.png'
+import java from '../../images/Java.png'
+import js from '../../images/JS.png'
+import html from '../../images/Html.png'
+import sql from '../../images/SQl.png'
+import css from '../../images/Css.png'
 import { CardBlogTitle } from "../../components/Card-Blog-Title/Card-Blog-Title";
 import { CardBlogList } from "../../components/Card-blog-list/Card-blog-list";
-import { Link, Router  } from "react-router-dom";
+const server = "https://my-dev-blog.herokuapp.com";
+
+const imageMap = new Map([
+    ["Android",android],
+    ["Flutter",flutter],
+    ["CSharp",csharp],
+    ["Python",python],
+    ["Java",java],
+    ["JS",js],
+    ["HTML",html],
+    ["SQL",sql],
+    ["CSS",css],
+]);
+
+
 
 export default class BlogItemsPage extends Component {
     constructor(props){
-        super(props)
-      
+        super(props)     
         this.state = {
             posts:[]
         }
@@ -17,8 +37,7 @@ export default class BlogItemsPage extends Component {
     }
 
     componentDidMount(){
-         const server = "https://my-dev-blog.herokuapp.com";
-         fetch(server + this.section, {method: 'get'}).then(res => res.json()).then(backendPosts => {
+         fetch(server+'/'+ this.section, {method: 'get'}).then(res => res.json()).then(backendPosts => {
             this.setState({
                 posts: backendPosts
             })
@@ -32,8 +51,8 @@ export default class BlogItemsPage extends Component {
             <div>
                 <CardBlogTitle 
                     section = {this.section}
-                    text = "Новости, интересные программные решения, обсуждения, связанные с JS и всем, что его касается"
-                    img = {JS}
+                    text = {`Новости, интересные программные решения, обсуждения, связанные с ${this.section} и всем, что его касается`}
+                    img = {imageMap.get(this.section)}
                 />
                 <div id="posts">
                     <CardBlogList blogList = {posts}/>

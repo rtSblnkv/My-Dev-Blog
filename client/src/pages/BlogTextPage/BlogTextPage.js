@@ -1,10 +1,10 @@
 import React, {Component} from "react";
-import dotenv from 'dotenv';
 import "./BlogTextPage.css";
 import { BlogTextBody } from "../../components/BlogTextBody/BlogTextBody";
 import { BlogTextHeader } from "../../components/BlogTextHeader/BlogTextHeader";
 import { BlogAuthor } from "../../components/BlogAuthor/BlogAuthor";
-import { BlogTextLikeButton } from "../../components/BlotTextLikeButton/BlogTextLikeButton"
+import { BlogTextLikeButton } from "../../components/BlotTextLikeButton/BlogTextLikeButton";
+const server = "https://my-dev-blog.herokuapp.com";
 
 export default class BlogTextPage extends Component{
     constructor(props){
@@ -13,14 +13,12 @@ export default class BlogTextPage extends Component{
         this.state = {
             posts:{}
         }
-        dotenv.config();
         console.log(this.section)
         console.log(this.id)
-        console.log(`${process.env.SERVER}/:section/${this.id}`)
+        console.log(`${server}/:section/${this.id}`)
     }
 
     componentDidMount(){
-        const server = "https://my-dev-blog.herokuapp.com";
         fetch(`${server}/:section/${this.id}`, {method: 'get'}).then(res => res.json()).then(backendPosts => {
             this.setState({
                 posts: backendPosts

@@ -12,7 +12,11 @@ export const CardBlogTitle = ({section,text,img}) => {
                     {text}
                 </div>
             </div>
-            <img src = {img}/>
+            <div className = "blog-image">
+                  <img src = {img}/>
+               </div>
+ 
+            
         </div>
     );
 }

@@ -8,7 +8,7 @@ import Csharp from '../../images/Csharp.png'
 import Python from '../../images/Python.png'
 import Java from '../../images/Java.png'
 import JS from '../../images/JS.png'
-import Html from '../../images/Html.png'
+import HTML from '../../images/Html.png'
 import Sql from '../../images/SQl.png'
 import Css from '../../images/Css.png'
 import mdbImage from  '../../images/mdbImage.png'
@@ -35,7 +35,7 @@ export const Main = () => {
                 <Card img={Flutter} title="Flutter" path="/Flutter"/>
                 <Card img={Python} title="Python" path="/Python"/>
                 <Card img={JS} title="JavaScript" path="/JS"/>
-                <Card img={Html} title="HTML" path="/HTMl"/>
+                <Card img={HTML} title="HTML" path="/HTML"/>
                 <Card img={Css} title="CSS" path="/CSS"/>
                 <Card img={Java} title="Java" path="/Java"/>
                 <Card img={Csharp} title="C#" path="/CSharp"/>
